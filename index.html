@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1262e6">
+  <meta name="description" content="A simple blue ride and delivery website demo.">
+  <title>GoBlue — Go anywhere</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="GoBlue home"><span class="brand-icon" aria-hidden="true">●</span>go<span>blue</span></a>
+      <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#book">Book a ride</a><a href="#how">How it works</a></nav>
+      <a class="nav-button" href="#book">Get started <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="live-dot"></span> YOUR EVERYDAY, MADE EASIER</span>
+          <h1>Where to<br><em>today?</em></h1>
+          <p>A ride across town, a meal at your door, or a package on its way. One simple place to get moving.</p>
+          <a class="hero-button" href="#book">Book a ride <span aria-hidden="true">→</span></a>
+          <div class="hero-proof"><span class="proof-icon">✓</span><span>Quick to book</span><span class="proof-separator">·</span><span>Easy to use</span></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-circle circle-one"></div><div class="visual-circle circle-two"></div>
+          <div class="route-card"><div class="route-top"><span>YOUR TRIP</span><span class="route-pill">ON THE WAY</span></div><div class="route-line"><i class="point start"></i><span>Home</span></div><div class="route-line"><i class="point end"></i><span>Your destination</span></div><div class="route-bottom"><span>Ready when you are</span><strong>→</strong></div></div>
+          <div class="floating-badge"><span>✦</span> Let's go!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services container" id="services">
+      <div class="section-title"><div><span class="section-kicker">WHAT CAN WE DO FOR YOU?</span><h2>One place. Plenty of ways to go.</h2></div><p>Pick what you need and get on with your day.</p></div>
+      <div class="service-grid">
+        <a class="service-card" href="#book" data-service="ride"><span class="service-icon">↗</span><h3>GoRide</h3><p>Get a ride to wherever you're headed.</p><span class="card-link">Book a ride →</span></a>
+        <a class="service-card" href="#book" data-service="food"><span class="service-icon">◡</span><h3>GoFood</h3><p>Find something good to eat, delivered.</p><span class="card-link">Explore food →</span></a>
+        <a class="service-card" href="#book" data-service="send"><span class="service-icon">□</span><h3>GoSend</h3><p>Send a package across town with ease.</p><span class="card-link">Send a package →</span></a>
+      </div>
+    </section>
+
+    <section class="booking-section" id="book">
+      <div class="container booking-grid">
+        <div class="booking-copy"><span class="section-kicker">LET'S GET MOVING</span><h2>A few taps<br>and you're set.</h2><p>Choose a service, tell us where to go, and see your trip details right here.</p><div class="mini-note"><span>✦</span><span>This is a website demo. No booking is sent.</span></div></div>
+        <form class="booking-card" id="booking-form">
+          <h3>Plan your trip</h3><p class="form-subtitle">Where can we take you?</p>
+          <div class="service-tabs" role="group" aria-label="Choose a service">
+            <button type="button" class="service-tab active" data-type="ride" aria-pressed="true">Ride</button>
+            <button type="button" class="service-tab" data-type="food" aria-pressed="false">Food</button>
+            <button type="button" class="service-tab" data-type="send" aria-pressed="false">Send</button>
+          </div>
+          <label for="pickup" id="pickup-label">Pick-up location</label>
+          <div class="input-wrap"><span class="input-dot pickup-dot"></span><input id="pickup" name="pickup" type="text" placeholder="Enter pick-up location" required autocomplete="street-address"></div>
+          <label for="destination" id="destination-label">Destination</label>
+          <div class="input-wrap"><span class="input-dot destination-dot"></span><input id="destination" name="destination" type="text" placeholder="Where are you going?" required></div>
+          <button class="submit-button" type="submit">See trip details <span aria-hidden="true">→</span></button>
+          <div class="result" id="result" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="how container" id="how"><span class="section-kicker">SIMPLE AS 1, 2, 3</span><h2>How it works</h2><div class="steps"><div><span>01</span><h3>Pick a service</h3><p>Choose a ride, food, or delivery.</p></div><div><span>02</span><h3>Add the details</h3><p>Tell us your starting point and destination.</p></div><div><span>03</span><h3>You're ready</h3><p>Review your plan and get on your way.</p></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-icon" aria-hidden="true">●</span>go<span>blue</span></a><span>Made for the everyday journey.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
