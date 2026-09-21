@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#E9DDC8">
+  <title>Raga | Pijat tradisional, di rumah Anda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Raga beranda"><span class="brand-mark">r.</span>raga<span class="brand-caption">SENTUHAN NUSANTARA</span></a>
+    <nav aria-label="Navigasi utama"><a class="active" href="#layanan">Layanan</a><a href="#ritual">Tentang Raga</a><a href="#bantuan">Bantuan</a></nav>
+    <button class="booking-link" id="history"><i data-lucide="notebook-pen"></i><span>Pesanan saya</span></button>
+  </header>
+  <main>
+    <div class="intro-line"><span>KEBAIKAN TRADISI, KENYAMANAN HARI INI.</span><span>JAKARTA & SEKITARNYA <span class="status-dot"></span></span></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="massage icon 1.avif" alt="Perawatan pijat bahu oleh terapis" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content"><span class="eyebrow">WAKTUNYA KEMBALI NYAMAN</span><h1 id="hero-title">Pijat tradisional.<br>Tak perlu keluar rumah.</h1><p>Rehat sejenak dari sibuknya hari.<br>Temukan perawatan yang pas untuk tubuh Anda.</p><a class="button light" href="#layanan">Temukan perawatan <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="photo-note">01 / SENI MERAWAT RAGA</div>
+    </section>
+    <section class="location-bar" aria-label="Lokasi perawatan"><div class="location-icon"><i data-lucide="map-pin"></i></div><div class="location-copy"><label for="address">MAU PIJAT DI MANA?</label><input id="address" placeholder="Masukkan alamat rumah atau hotel" autocomplete="street-address"></div><button class="button" id="save-location">Simpan alamat <i data-lucide="arrow-right"></i></button></section>
+    <p class="location-feedback" id="location-feedback" role="status"></p>
+    <section class="services" id="layanan">
+      <div class="section-heading"><div><span class="eyebrow">PILIHAN PERAWATAN / 01</span><h2>Apa yang tubuh Anda butuhkan?</h2></div><span class="section-aside">Sentuhan sederhana. Rasa yang berbeda.</span></div>
+      <div class="filters" role="group" aria-label="Kategori perawatan"><button class="selected" data-filter="all" aria-pressed="true">Semua perawatan <span>04</span></button><button data-filter="body" aria-pressed="false">Seluruh tubuh</button><button data-filter="focused" aria-pressed="false">Area tertentu</button><button data-filter="ritual" aria-pressed="false">Ritual tradisional</button></div>
+      <div class="service-grid">
+        <article class="service-card" data-category="body"><div class="card-top"><i data-lucide="hand"></i><span class="tag">PILIHAN FAVORIT</span></div><span class="catalogue">PERAWATAN NO. 01</span><h3>Pijat Tradisional</h3><p>Sentuhan pijat khas Nusantara untuk menemani istirahat seluruh tubuh.</p><div class="duration"><i data-lucide="clock-3"></i>60 / 90 / 120 menit</div><div class="card-bottom"><div><small>Mulai dari</small><strong>Rp120.000</strong></div><button class="select-service" data-service="0" aria-label="Pilih Pijat Tradisional" title="Pilih Pijat Tradisional"><i data-lucide="arrow-up-right"></i></button></div></article>
+        <article class="service-card" data-category="focused"><div class="card-top"><i data-lucide="footprints"></i><span class="card-index">02</span></div><span class="catalogue">PERAWATAN NO. 02</span><h3>Refleksi Kaki</h3><p>Waktu istirahat untuk kaki yang telah menemani setiap langkah Anda.</p><div class="duration"><i data-lucide="clock-3"></i>60 / 90 menit</div><div class="card-bottom"><div><small>Mulai dari</small><strong>Rp100.000</strong></div><button class="select-service" data-service="1" aria-label="Pilih Refleksi Kaki" title="Pilih Refleksi Kaki"><i data-lucide="arrow-up-right"></i></button></div></article>
+        <article class="service-card" data-category="body"><div class="card-top"><i data-lucide="flower-2"></i><span class="card-index">03</span></div><span class="catalogue">PERAWATAN NO. 03</span><h3>Pijat Aromaterapi</h3><p>Pijatan lembut dan aroma minyak esensial untuk suasana yang menenangkan.</p><div class="duration"><i data-lucide="clock-3"></i>60 / 90 / 120 menit</div><div class="card-bottom"><div><small>Mulai dari</small><strong>Rp150.000</strong></div><button class="select-service" data-service="2" aria-label="Pilih Pijat Aromaterapi" title="Pilih Pijat Aromaterapi"><i data-lucide="arrow-up-right"></i></button></div></article>
+        <article class="service-card" data-category="ritual"><div class="card-top"><i data-lucide="leaf"></i><span class="card-index">04</span></div><span class="catalogue">PERAWATAN NO. 04</span><h3>Pijat & Lulur</h3><p>Sepasang ritual perawatan tubuh dengan pijat dan lulur tradisional.</p><div class="duration"><i data-lucide="clock-3"></i>90 / 120 menit</div><div class="card-bottom"><div><small>Mulai dari</small><strong>Rp180.000</strong></div><button class="select-service" data-service="3" aria-label="Pilih Pijat dan Lulur" title="Pilih Pijat dan Lulur"><i data-lucide="arrow-up-right"></i></button></div></article>
+      </div>
+    </section>
+    <section class="ritual" id="ritual"><div class="ritual-heading"><span class="eyebrow">DEKAT DENGAN AKAR KITA</span><h2>Tradisi yang dirawat.<br>Kenyamanan yang dibawa pulang.</h2></div><div class="ritual-detail"><i data-lucide="sprout"></i><h3>Berakar pada tradisi</h3><p>Perawatan yang terinspirasi dari kebiasaan merawat diri khas Nusantara.</p></div><div class="ritual-detail"><i data-lucide="house"></i><h3>Di ruang nyaman Anda</h3><p>Pilih perawatan dan waktu, nikmati momen rehat tanpa perjalanan.</p></div></section>
+    <section class="help" id="bantuan"><div><span class="eyebrow">ADA YANG INGIN DITANYAKAN?</span><h2>Sebelum mulai bersantai.</h2></div><div class="questions"><details><summary>Apa yang perlu saya siapkan?</summary><p>Siapkan ruangan yang nyaman, alas atau tempat tidur, serta handuk bersih untuk perawatan.</p></details><details><summary>Bagaimana cara memilih jadwal?</summary><p>Pilih perawatan, tentukan durasi, lalu pilih tanggal dan waktu di ringkasan perawatan.</p></details><details><summary>Apakah pemesanan sudah tersedia?</summary><p>Saat ini Raga merupakan pratinjau layanan. Pilihan Anda dapat disimpan di perangkat ini, tetapi belum dikirim kepada terapis dan tidak dikenakan biaya.</p></details></div></section>
+  </main>
+  <footer><a class="brand" href="#">raga<span class="brand-caption">SENTUHAN NUSANTARA</span></a><span>Merawat tubuh, menghargai tradisi.</span><small>&copy; 2026 Raga</small></footer>
+  <dialog id="booking-dialog"><form id="booking-form"><div class="dialog-heading"><span class="eyebrow">MOMEN REHAT ANDA</span><button type="button" class="icon-button" id="close-dialog" aria-label="Tutup" title="Tutup"><i data-lucide="x"></i></button></div><h2 id="booking-title">Perawatan Anda</h2><p class="preview-note">Pratinjau pemesanan. Belum terhubung ke terapis.</p><label for="duration">Durasi perawatan</label><select id="duration"></select><label for="booking-address">Alamat perawatan</label><textarea id="booking-address" required placeholder="Jalan, nomor rumah, dan kecamatan" rows="2"></textarea><div class="schedule"><div><label for="date">Tanggal</label><input id="date" type="date" required></div><div><label for="time">Waktu</label><select id="time"><option>09:00</option><option>11:00</option><option>13:00</option><option>15:00</option><option>17:00</option><option>19:00</option></select></div></div><div class="total"><span>Estimasi biaya</span><strong id="price"></strong></div><button class="button full" type="submit">Simpan pilihan <i data-lucide="check"></i></button><p id="booking-status" role="status"></p></form></dialog>
+</body>
+</html>
